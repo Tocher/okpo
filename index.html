@@ -7,8 +7,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="data">
+            <table class="table table-bordered">
+                <tr>
+                    <td>№</td>
+                    <td>отказоустойчивость</td>
+                    <td>стабильность</td>
+                    <td>восстанавливаемость</td>
+                </tr>
+            </table>
 
+            <button type="button" class="render btn btn-default">Обработать</button>
+        </div>
+        <div class="graph">
+            <canvas id="chart" width="400" height="200"></canvas>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
